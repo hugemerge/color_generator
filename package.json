@@ -1,0 +1,23 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "predev": "rm -rf dist",
+    "dev": "parcel src/index.pug",
+    "prebuild": "rm -rf public",
+    "build": "parcel build -d public src/index.pug"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@primer/css": "^12.4.0",
+    "parcel-bundler": "^1.12.3",
+    "postcss-custom-properties": "^8.0.10",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "pug": "^2.0.3",
+    "stylelint": "^10.1.0",
+    "stylelint-config-primer": "^7.0.0"
+  }
+}

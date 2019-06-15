@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title test
+
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato&display=swap")
+    link(rel="stylesheet", type="text/css" href="css/style.css")
+    script(src="js/app.js" defer="")
+  body
+    h1#title color generator
+    .container
+      .palette(data-color="#000000")
+        p.label
+        p.rgb
+        .sample
+        label.check lock
+          input(type="checkbox", name="lock")
+          span
+
+      .palette(data-color="#333fff")
+        p.label
+        p.rgb
+        .sample
+        label.check lock
+          input(type="checkbox", name="lock")
+          span
+
+      .palette(data-color="#ffffff")
+        p.label
+        p.rgb
+        .sample
+        label.check lock
+          input(type="checkbox", name="lock")
+          span
+
+    button#change(class="button") Change
